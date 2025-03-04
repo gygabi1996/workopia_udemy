@@ -8,6 +8,8 @@ use Illuminate\View\View;
 
 class HomeController extends Controller
 {
+    // @desc Show home form
+    // @route GET /
     public function index(): View
     {
         $jobs = Job::latest()->limit(6)->get();
